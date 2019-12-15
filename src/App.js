@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Button from './Button'
-import Resturaunt from './Resturaunt'
 class App extends Component {
 
   constructor() {
@@ -15,7 +14,7 @@ class App extends Component {
    
     this.thisButton = this.thisButton.bind(this);
   }
-  //api key e2ed5ae39e5d1bf34dcdc6f75ad6b13e
+  //api key e2ed5ae39e5d1bf34dcdc6f75ad6b13e  
   thisButton() {
     fetch("https://aws.random.cat/meow?ref=apilist.fun")
   .then(res => res.json())
@@ -27,14 +26,14 @@ class App extends Component {
 
 render() {
   return (
-    <div>
-      <header>
-      <h1>
-       
-      </h1>
+    <div className="App">
+      <header className="App-header">
+      <h1 className="App-title">Random Cats</h1>
       </header>
       <div className="litterbox">
-        <img src={this.state.cats} alt=''></img>
+        <img src={this.state.cats} alt='cat image'></img>
+        </div>
+        <div>
       <Button thisButton={this.thisButton} label={'next res'}/>
       </div>
       

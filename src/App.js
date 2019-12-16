@@ -64,7 +64,7 @@ render() {
       <div className="litterbox">
         <img src={this.state.cats} alt='cat image'/>
         </div>
-        <div>
+        <div className="bottom">
       <Button thisButton={this.thisButton}label={'Add Photo'}/>
       </div>
       

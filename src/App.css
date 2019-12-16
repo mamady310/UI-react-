@@ -37,10 +37,18 @@
   }
 } */
 
+.App{
+  background-color: darkkhaki;
+}
+
+.App-title {
+  color: darkslategray;
+}
 .topButtons {
   display: flex;
   align-content: center;
   justify-content: center;
+  justify-content: space-around;
 }
 
 .litterbox{
@@ -50,6 +58,7 @@
   display: inline-block;
   justify-content: center;
   align-content: center;
+  justify-items: center;
   /* margin: auto;
   margin-top: 100px; */
 }
@@ -66,4 +75,20 @@ img {
   color: black;
   font-size: 50px;
   text-align: center;
+}
+Button {
+    background-color: white;
+    border-radius:28px;
+    border:1px solid white;
+    display:inline-block;
+    cursor:pointer;
+    color: darkkhaki;
+    font-family:Arial;
+    font-size:17px;
+    padding:20px 11px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px white;
+}
+.bottom {
+  justify-content: center;
 }

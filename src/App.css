@@ -37,22 +37,33 @@
   }
 } */
 
+.topButtons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .litterbox{
   width: 600px;
   height: 400px;
   overflow: hidden;
   display: inline-block;
-  /* justify-content: center;
+  justify-content: center;
   align-content: center;
-  margin: auto;
+  /* margin: auto;
   margin-top: 100px; */
 }
 img {
-  /* image-resolution: auto; */
-   object-fit: fill;
-  
+  overflow: hidden;
+  object-fit: scale-down;
+  justify-content: center;
+  align-content: center;
+  /* display: block;
+  margin: 0 auto; */
+
 }
 .App-title {
   color: black;
-  font-size: 20px;
+  font-size: 50px;
+  text-align: center;
 }

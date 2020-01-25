@@ -21,7 +21,7 @@ class App extends Component {
   .then(res => res.json())
   .then(res => {
     this.setState({cats: res.file})
-    // console.log(res)
+    console.log(res)
     if(this.state.catArray.length <= 15){
       this.setState(prevState => ({
       catArray: [...prevState.catArray, res]
@@ -49,8 +49,8 @@ class App extends Component {
 
 render() {
    
-  const count = this.state.count
-  const img = this.state.catArray[count] 
+  // const count = this.state.count
+  // const chicken = this.state.catArray[count] 
   return (
     <div className="App">
       <header className="App-header">
